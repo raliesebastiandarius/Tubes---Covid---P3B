@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tubes - Covid</string>
+    <string name="openDrawer">1</string>
+    <string name="closeDrawer">2</string>
+</resources>
