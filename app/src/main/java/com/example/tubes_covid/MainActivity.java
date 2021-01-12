@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
         this.fragmentManager = this.getSupportFragmentManager();
         FragmentTransaction ft = this.fragmentManager.beginTransaction();
         ft.add(R.id.fragment_container, this.fragment1).addToBackStack(null).commit();
-        this.toolbar = this.findViewById(R.id.toolbar);
-        this.setSupportActionBar(toolbar);
+//        this.toolbar = this.findViewById(R.id.toolbar);
+//        this.setSupportActionBar(toolbar);
         this.drawer = this.findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle abdt = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.openDrawer, R.string.closeDrawer);
         drawer.addDrawerListener(abdt);

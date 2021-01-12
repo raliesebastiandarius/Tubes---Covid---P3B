@@ -11,9 +11,153 @@
         android:layout_height="wrap_content"
         android:text="News"
         android:textSize="40dp"
+        android:id="@+id/judul"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="30dp">
     </TextView>
 
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/judul"
+            android:id="@+id/beritaPertama"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/berita"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/berita"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/texBerita"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="false"
+                    android:text="Title"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/beritaPertama"
+        android:id="@+id/beritaKedua"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/berita2"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true">
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/berita2"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/judulBerita2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="false"
+                android:text="Title"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/beritaKedua"
+        android:id="@+id/beritaKetiga"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/berita3"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true">
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/berita3"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/judulBerita3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="false"
+                android:text="Title"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/beritaKetiga"
+        android:id="@+id/beritaKeempat"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/berita4"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true">
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/berita4"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/judulBerita4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="false"
+                android:text="Title"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>
