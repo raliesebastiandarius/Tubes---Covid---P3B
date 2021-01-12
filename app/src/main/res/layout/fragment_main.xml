@@ -9,10 +9,105 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman Utama"
+        android:text="Data Sebaran"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
         android:id="@+id/tv_halaman">
     </TextView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Kasus"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_halaman"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_total">
+    </TextView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Positif"
+        android:id="@+id/tv_positif"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_total"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123456"
+        android:id="@+id/tv_jumlahPositif"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_positif"
+        >
+    </TextView>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sembuh"
+    android:id="@+id/tv_sembuh"
+    android:textSize="20dp"
+    android:layout_marginTop="30dp"
+    android:textColor="#000000"
+    android:layout_below="@+id/tv_total"
+    android:layout_centerInParent="true"
+    >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345"
+        android:id="@+id/tv_angkaSembuh"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_sembuh"
+        android:layout_centerInParent="true"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meninggal"
+        android:id="@+id/tv_meninggal"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_total"
+        android:layout_alignParentRight="true"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:id="@+id/tv_angkaMeninggal"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_meninggal"
+        android:layout_alignParentRight="true"
+        >
+    </TextView>
 
 </RelativeLayout>
