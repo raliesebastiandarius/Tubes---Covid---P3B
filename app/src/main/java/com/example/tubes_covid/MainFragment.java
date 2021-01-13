@@ -14,7 +14,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     protected FragmentListener listener;
     protected TextView halaman;
     protected Button click;
-
+    protected TextView gejala, perawatan, pencegahan;
 
     public MainFragment() {
 
@@ -26,6 +26,13 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         this.halaman = view.findViewById(R.id.tv_halaman);
+        this.gejala = view.findViewById(R.id.tv_gejala);
+        this.perawatan = view.findViewById(R.id.tv_perawatan);
+        this.pencegahan = view.findViewById(R.id.tv_pencegahan);
+
+        this.gejala.setOnClickListener(this);
+        this.perawatan.setOnClickListener(this);
+        this.pencegahan.setOnClickListener(this);
         return view;
     }
 
@@ -45,8 +52,17 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        if(this.click.getId()==view.getId()){
-            this.listener.changePage(3,"");
+//        if(this.click.getId()==view.getId()){
+//            this.listener.changePage(3,"");
+//        }
+        if(this.gejala.getId()==view.getId()){
+            this.listener.changePage(5,"");
+        }
+        else if(this.perawatan.getId()==view.getId()){
+            this.listener.changePage(6,"");
+        }
+        else if(this.pencegahan.getId()==view.getId()){
+            this.listener.changePage(7,"");
         }
     }
 
