@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
     protected NewsFragment fragmentNews;
     Toolbar toolbar;
     protected DrawerLayout drawer;
+    protected String url;
 
 
     @Override
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
         ActionBarDrawerToggle abdt = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.openDrawer, R.string.closeDrawer);
         drawer.addDrawerListener(abdt);
         abdt.syncState();
+        this.url ="https://api.covid19api.com/";
+
     }
 
     public void setSupportActionBar(Toolbar toolbar) {
