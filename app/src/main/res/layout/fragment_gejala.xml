@@ -22,40 +22,45 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/bagian_gejala"
+
         android:paddingTop="20dp"
         android:layout_below="@+id/tv_gejala">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:id="@+id/awal"
-            android:text="  Masing-masing orang memiliki respons yang berbeda terhadap COVID-19. Sebagian besar orang yang terpapar virus ini akan mengalami gejala ringan hingga sedang, dan akan pulih tanpa perlu dirawat di rumah sakit."/>
-
+            android:text="@string/text_gejala1"/>
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/awal"
             android:id="@+id/umum"
+            android:textColor="#000000"
             android:paddingTop="12dp"
-            android:text="Gejala yang paling umum   :"/>
+            android:text="@string/gejalaUmum"/>
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/umum"
+            android:textColor="#000000"
             android:id="@+id/demam"
-            android:text="      Demam"/>
+            android:text="      - Demam"/>
 
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/demam"
+            android:textColor="#000000"
             android:id="@+id/batukKering"
-            android:text="      Batuk Kering"/>
+            android:text="      - Batuk Kering"/>
 
         <ImageView
             android:layout_width="250dp"
             android:layout_height="100dp"
             android:id="@+id/iv_batuk"
+            android:textColor="#000000"
             android:layout_below="@+id/umum"
             android:layout_toRightOf="@id/batukKering"
             android:src="@drawable/batuk"/>
@@ -64,37 +69,42 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/batukKering"
+            android:textColor="#000000"
             android:id="@+id/kelelahan"
-            android:text="      Kelelahan "/>
+            android:text="      - Kelelahan "/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="12dp"
+            android:textColor="#000000"
             android:layout_below="@+id/iv_batuk"
             android:id="@+id/tv_gejala2"
-            android:text="Gejala yang serius:"/>
+            android:text="@string/gejalaSerius"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:layout_below="@+id/tv_gejala2"
             android:id="@+id/tv_sesakNafas"
-            android:text="      Kesulitan bernapas atau sesak napas."/>
+            android:text="      - Kesulitan bernapas atau sesak napas."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_sesakNafas"
+            android:textColor="#000000"
             android:id="@+id/tv_nyeriDada"
-            android:text="      Nyeri dada atau rasa tertekan pada dada."/>
+            android:text="      - Nyeri dada atau rasa tertekan pada dada."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_nyeriDada"
+            android:textColor="#000000"
             android:id="@+id/tv_hilang"
-            android:text="      Hilangnya indra penciuman dan pengecap."/>
+            android:text="      - Hilangnya indra penciuman dan pengecap."/>
 
         <ImageView
             android:layout_width="200dp"
@@ -117,9 +127,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_gejala3"
+            android:textColor="#000000"
             android:paddingTop="20dp"
             android:layout_below="@+id/iv_sesak"
-            android:text="  Segera cari bantuan medis jika Anda mengalami gejala serius. Selalu hubungi dokter atau fasilitas kesehatan yang ingin Anda tuju sebelum mengunjunginya. Orang dengan gejala ringan yang dinyatakan sehat harus melakukan perawatan mandiri di rumah. Rata-rata gejala akan muncul 5–6 hari setelah seseorang pertama kali terinfeksi virus ini, tetapi bisa juga 14 hari setelah terinfeksi."/>
-
+            android:text="@string/text_gejala3"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -21,81 +21,90 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/bagian_pencegahan"
+
         android:layout_below="@+id/judul_pencegahan">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:id="@+id/tv_pencegahan"
             android:paddingTop="20dp"
-            android:text="      Lindungi diri Anda dan orang lain di sekitar Anda dengan mengetahui fakta-fakta terkait virus ini dan mengambil langkah pencegahan yang sesuai. Ikuti saran yang diberikan oleh otoritas kesehatan setempat."/>
-
+            android:text="@string/text_pencegahan1"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_mencegah"
+            android:textColor="#000000"
             android:layout_below="@+id/tv_pencegahan"
             android:paddingTop="20dp"
-            android:text="Untuk mencegah penyebaran COVID-19 : "/>
+            android:text="@string/text_pencegahan3"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:layout_below="@+id/tv_mencegah"
             android:id="@+id/tv_cuci"
-            android:text="      Cuci tangan Anda secara rutin. Gunakan sabun dan air, atau cairan pembersih tangan berbahan alkohol."/>
+            android:text="- Cuci tangan Anda secara rutin. Gunakan sabun dan air, atau cairan pembersih tangan berbahan alkohol."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_cuci"
+            android:textColor="#000000"
             android:id="@+id/tv_jagaJarak"
-            android:text="      Selalu jaga jarak aman dengan orang yang batuk atau bersin."/>
+            android:text="- Selalu jaga jarak aman dengan orang yang batuk atau bersin."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_jagaJarak"
+            android:textColor="#000000"
             android:id="@+id/tv_kenakanMasker"
-            android:text="      Kenakan masker jika pembatasan fisik tidak dimungkinkan."/>
+            android:text="- Kenakan masker jika pembatasan fisik tidak dimungkinkan."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_kenakanMasker"
+            android:textColor="#000000"
             android:id="@+id/tv_sentuh"
-            android:text="      Jangan sentuh mata, hidung, atau mulut Anda."/>
+            android:text="- Jangan sentuh mata, hidung, atau mulut Anda."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_sentuh"
+            android:textColor="#000000"
             android:id="@+id/tv_tutup"
-            android:text="      Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu."/>
+            android:text="- Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_tutup"
+            android:textColor="#000000"
             android:id="@+id/tv_keluar"
-            android:text="      Jangan keluar rumah jika merasa tidak enak badan."/>
+            android:text="- Jangan keluar rumah jika merasa tidak enak badan."/>
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_keluar"
+            android:textColor="#000000"
             android:id="@+id/tv_medis"
-            android:text="      Jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis."/>
+            android:text="- Jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis."/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_medis"
+            android:textColor="#000000"
             android:id="@+id/tv_masker"
             android:paddingTop="20dp"
-            android:text="      Masker dapat membantu mencegah penyebaran virus dari orang yang mengenakannya kepada orang lain. Mengenakan masker saja tidak cukup untuk melindungi diri dari COVID-19, sehingga harus dikombinasikan dengan pembatasan fisik dan kebersihan tangan. Ikuti saran yang diberikan oleh otoritas kesehatan setempat."/>
-
+            android:text="@string/text_pencegahan2"/>
         <ImageView
             android:layout_width="200dp"
             android:layout_height="100dp"
