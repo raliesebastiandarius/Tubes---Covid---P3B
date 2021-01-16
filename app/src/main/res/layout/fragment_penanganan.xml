@@ -14,14 +14,123 @@
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:id="@+id/pencegahan">
+        android:id="@+id/judul_pencegahan">
     </TextView>
 
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/teks_pencegahan"-->
-<!--        android:layout_below="@+id/pencegahan">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bagian_pencegahan"
+        android:layout_below="@+id/judul_pencegahan">
 
-<!--    </RelativeLayout>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pencegahan"
+            android:paddingTop="20dp"
+            android:text="      Lindungi diri Anda dan orang lain di sekitar Anda dengan mengetahui fakta-fakta terkait virus ini dan mengambil langkah pencegahan yang sesuai. Ikuti saran yang diberikan oleh otoritas kesehatan setempat."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mencegah"
+            android:layout_below="@+id/tv_pencegahan"
+            android:paddingTop="20dp"
+            android:text="Untuk mencegah penyebaran COVID-19 : "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mencegah"
+            android:id="@+id/tv_cuci"
+            android:text="      Cuci tangan Anda secara rutin. Gunakan sabun dan air, atau cairan pembersih tangan berbahan alkohol."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cuci"
+            android:id="@+id/tv_jagaJarak"
+            android:text="      Selalu jaga jarak aman dengan orang yang batuk atau bersin."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_jagaJarak"
+            android:id="@+id/tv_kenakanMasker"
+            android:text="      Kenakan masker jika pembatasan fisik tidak dimungkinkan."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_kenakanMasker"
+            android:id="@+id/tv_sentuh"
+            android:text="      Jangan sentuh mata, hidung, atau mulut Anda."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sentuh"
+            android:id="@+id/tv_tutup"
+            android:text="      Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tutup"
+            android:id="@+id/tv_keluar"
+            android:text="      Jangan keluar rumah jika merasa tidak enak badan."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_keluar"
+            android:id="@+id/tv_medis"
+            android:text="      Jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_medis"
+            android:id="@+id/tv_masker"
+            android:paddingTop="20dp"
+            android:text="      Masker dapat membantu mencegah penyebaran virus dari orang yang mengenakannya kepada orang lain. Mengenakan masker saja tidak cukup untuk melindungi diri dari COVID-19, sehingga harus dikombinasikan dengan pembatasan fisik dan kebersihan tangan. Ikuti saran yang diberikan oleh otoritas kesehatan setempat."/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_masker"
+            android:paddingTop="12dp"
+            android:id="@+id/iv_masker"
+            android:src="@drawable/masker"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:paddingTop="12dp"
+            android:layout_below="@id/iv_masker"
+            android:id="@+id/iv_cuci"
+            android:src="@drawable/cuci"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_masker"
+            android:layout_toRightOf="@+id/iv_masker"
+            android:paddingTop="12dp"
+            android:id="@+id/iv_stay"
+            android:src="@drawable/stay"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:paddingTop="12dp"
+            android:layout_below="@id/iv_masker"
+            android:layout_toRightOf="@+id/iv_cuci"
+            android:id="@+id/iv_jaga"
+            android:src="@drawable/jaga"/>
+
+
+    </RelativeLayout>
+
 </RelativeLayout>

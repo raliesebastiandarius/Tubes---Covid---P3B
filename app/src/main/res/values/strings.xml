@@ -2,4 +2,7 @@
     <string name="app_name">Tubes - Covid</string>
     <string name="openDrawer">1</string>
     <string name="closeDrawer">2</string>
+    <string name="text_perawatan1">    Jika Anda merasa sakit, Anda harus beristirahat, minum banyak air, dan makan makanan bergizi. Gunakan ruangan yang terpisah dari anggota keluarga Anda, dan jika memungkinkan gunakan kamar mandi khusus. Bersihkan dan lakukan disinfeksi pada permukaan benda yang sering disentuh.</string>
+    <string name="text_perawatan2">Semua orang harus menjaga pola hidup sehat di rumah. Jaga pola diet yang sehat, tidur cukup, tetap aktif, dan lakukan kontak sosial dengan orang-orang yang Anda sayangi melalui telepon atau internet. Selama masa sulit seperti sekarang, anak-anak membutuhkan kasih sayang dan perhatian lebih dari orang dewasa. Usahakan untuk selalu menjaga rutinitas dan jadwal seperti biasanya."</string>
+    <string name="text_perawatan3">Merasa sedih, stres, atau bingung selama krisis merupakan hal yang normal. Berbicara dengan orang yang Anda percaya, seperti teman dan keluarga, dapat membantu. Jika Anda merasa kewalahan, hubungi tenaga kesehatan atau konselor. virus ini akan mengalami gejala ringan hingga sedang, dan akan pulih tanpa perlu dirawat di rumah sakit."</string>
 </resources>

@@ -20,8 +20,29 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/text_perawatan"
+        android:id="@+id/perawatan"
         android:layout_below="@+id/tv_perawatan">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perawatan1"
+            android:paddingTop="20dp"
+            android:text="@string/text_perawatan1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perawatan2"
+            android:paddingTop="12dp"
+            android:layout_below="@+id/perawatan1"
+            android:text="@string/text_perawatan2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perawatan3"
+            android:paddingTop="12dp"
+            android:layout_below="@+id/perawatan2"
+            android:text="@string/text_perawatan3"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -37,8 +37,10 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
 
         FragmentTransaction ft = this.fragmentManager.beginTransaction();
         ft.add(R.id.fragment_container, this.fragment1).addToBackStack(null).commit();
+
         this.toolbar = this.findViewById(R.id.toolbar);
         this.setSupportActionBar(toolbar);
+
         this.drawer = this.findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle abdt = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.openDrawer, R.string.closeDrawer);
         drawer.addDrawerListener(abdt);
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
             if(this.gejalaFragment.isAdded()){
                 ft.show(this.gejalaFragment);
             }else{
-                ft.add(R.id.fragment_container,this.gejalaFragment);
+                ft.add(R.id.fragment_container,this.gejalaFragment).addToBackStack(null);
             }
             ft.hide(this.fragment1);
             ft.hide(this.pencegahanFragment);
@@ -105,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
             if(this.perawatanFragment.isAdded()){
                 ft.show(this.perawatanFragment);
             }else{
-                ft.add(R.id.fragment_container,this.perawatanFragment);
+                ft.add(R.id.fragment_container,this.perawatanFragment).addToBackStack(null);
             }
             ft.hide(this.fragment1);
             ft.hide(this.pencegahanFragment);
@@ -117,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
             if(this.pencegahanFragment.isAdded()){
                 ft.show(this.pencegahanFragment);
             }else{
-                ft.add(R.id.fragment_container,this.pencegahanFragment);
+                ft.add(R.id.fragment_container,this.pencegahanFragment).addToBackStack(null);
             }
             ft.hide(this.fragment1);
             ft.hide(this.gejalaFragment);
