@@ -14,150 +14,119 @@
         android:id="@+id/judul"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:textColor="#000000">
     </TextView>
 
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_below="@+id/judul"
-            android:id="@+id/beritaPertama"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/berita"
-                android:layout_alignParentStart="true"
-                android:layout_centerInParent="true">
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toEndOf="@+id/berita"
-                android:orientation="vertical"
-                android:padding="5dp">
-
-                <TextView
-                    android:id="@+id/texBerita"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:singleLine="false"
-                    android:text="Title"
-                    android:textSize="12sp"/>
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/beritaPertama"
-        android:id="@+id/beritaKedua"
-        android:orientation="horizontal">
+        android:text="@string/subJudulBerita"
+        android:layout_below="@id/judul"
+        android:textSize="25dp"
+        android:paddingTop="20dp"
+        android:id="@+id/subJudulBerita"
+        android:textColor="#000000"/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/berita2"
-            android:layout_alignParentStart="true"
-            android:layout_centerInParent="true">
-        </RelativeLayout>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/subJudulBerita"
+        android:text="@string/berita1"
+        android:paddingTop="12dp"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:id="@+id/berita1"
+        android:textColor="#000000"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_toEndOf="@+id/berita2"
-            android:orientation="vertical"
-            android:padding="5dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/menu"
+        android:clickable="true"
+        android:id="@+id/gambar1"
+        android:layout_below="@id/subJudulBerita"
+        android:layout_toRightOf="@id/berita1"/>
 
-            <TextView
-                android:id="@+id/judulBerita2"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:singleLine="false"
-                android:text="Title"
-                android:textSize="12sp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/berita1"
+        android:text="@string/berita2"
+        android:paddingTop="12dp"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:id="@+id/berita2"
+        android:textColor="#000000"/>
 
-        </LinearLayout>
-    </RelativeLayout>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:src="@drawable/wabah"
+        android:layout_below="@id/berita1"
+        android:id="@+id/gambar2"
+        android:clickable="true"
+        android:layout_toRightOf="@id/berita2" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/beritaKedua"
-        android:id="@+id/beritaKetiga"
-        android:orientation="horizontal">
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/berita2"
+        android:text="@string/berita3"
+        android:paddingTop="12dp"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:id="@+id/berita3"
+        android:textColor="#000000"/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/berita3"
-            android:layout_alignParentStart="true"
-            android:layout_centerInParent="true">
-        </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/arahan"
+        android:layout_below="@id/berita2"
+        android:id="@+id/gambar3"
+        android:clickable="true"
+        android:layout_toRightOf="@id/berita3"
+        android:paddingTop="5dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/berita3"
+        android:text="@string/berita4"
+        android:paddingTop="12dp"
+        android:clickable="true"
+        android:textSize="20dp"
+        android:id="@+id/berita4"
+        android:textColor="#000000"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_toEndOf="@+id/berita3"
-            android:orientation="vertical"
-            android:padding="5dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/rapid"
+        android:layout_below="@id/berita3"
+        android:clickable="true"
+        android:id="@+id/gambar4"
+        android:layout_toRightOf="@id/berita4"
+        android:paddingTop="5dp"/>
 
-            <TextView
-                android:id="@+id/judulBerita3"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:singleLine="false"
-                android:text="Title"
-                android:textSize="12sp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/berita4"
+        android:text="@string/berita5"
+        android:paddingTop="12dp"
+        android:textSize="20dp"
+        android:id="@+id/berita5"
+        android:textColor="#000000"/>
 
-        </LinearLayout>
-    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/kendalikan"
+        android:clickable="true"
+        android:id="@+id/gambar5"
+        android:layout_below="@id/berita4"
+        android:layout_toRightOf="@id/berita5"
+        android:paddingTop="5dp"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_below="@+id/beritaKetiga"
-        android:id="@+id/beritaKeempat"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/berita4"
-            android:layout_alignParentStart="true"
-            android:layout_centerInParent="true">
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_toEndOf="@+id/berita4"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/judulBerita4"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:singleLine="false"
-                android:text="Title"
-                android:textSize="12sp"/>
-
-        </LinearLayout>
-    </RelativeLayout>
 </RelativeLayout>

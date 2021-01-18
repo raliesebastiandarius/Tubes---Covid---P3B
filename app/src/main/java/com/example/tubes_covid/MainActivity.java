@@ -10,12 +10,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.telecom.Call;
 import android.widget.Toast;
 
 import java.util.List;
 
-import retrofit2.Call;
-import retrofit2.Callback;
+//import retrofit2.Call;
+////import retrofit2.Callback;
 
 public class MainActivity extends AppCompatActivity implements FragmentListener {
 
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
     Toolbar toolbar;
     protected DrawerLayout drawer;
     protected String url;
-    private CustomAdapter customAdapter;
-    private RecyclerView recyclerView;
-    progressDialog progressDialog;
+//    private CustomAdapter customAdapter;
+//    private RecyclerView recyclerView;
+//    progressDialog progressDialog;
 
 
     @Override
@@ -39,9 +40,9 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        progressDialog = new progressDialog(MainActivity.this);
-        progressDialog.setMessage("Loading....");
-        progressDialog.show();
+//        progressDialog = new progressDialog(MainActivity.this);
+//        progressDialog.setMessage("Loading....");
+//        progressDialog.show();
         this.fragment1 = new MainFragment();
         this.fragmentCountry = new CountryFragment(this);
         this.fragmentNews = new NewsFragment(this);
@@ -51,27 +52,27 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
         this.gejalaFragment = new GejalaFragment(this);
 
         GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
-        Call<List<Global>> call = service.getTotalConfirmed();
-        call.enqueue(new Callback<List<Global>>() {
-            @Override
-            public void onResponse(Call<List<Global>> call, Response<List<Global>> response) {
-                progressDialog.dismiss();
-                generateDataList(response.body());
-            }
-
-            @Override
-            public void onFailure(Call<List<Global>> call, Throwable t) {
-                progressDialog.dismiss();
-                Toast.makeText(MainActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        private void generateDataList(List<Global> global) {
-            recyclerView = findViewById(R.id.customRecyclerView);
-            adapter = new CustomAdapter(this,global);
-            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.recyclerView.setLayoutManager(layoutManager);
-            recyclerView.setAdapter(adapter);
-        }
+//        Call<List<Global>> call = service.getTotalConfirmed();
+//        call.enqueue(new Callback<List<Global>>() {
+//            @Override
+//            public void onResponse(Call<List<Global>> call, Response<List<Global>> response) {
+//                progressDialog.dismiss();
+//                generateDataList(response.body());
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<Global>> call, Throwable t) {
+//                progressDialog.dismiss();
+//                Toast.makeText(MainActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//        private void generateDataList(List<Global> global) {
+//            recyclerView = findViewById(R.id.customRecyclerView);
+//            adapter = new CustomAdapter(this,global);
+//            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.recyclerView.setLayoutManager(layoutManager);
+//            recyclerView.setAdapter(adapter);
+//        }
         FragmentTransaction ft = this.fragmentManager.beginTransaction();
         ft.add(R.id.fragment_container, this.fragment1).addToBackStack(null).commit();
 
