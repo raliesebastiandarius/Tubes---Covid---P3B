@@ -30,11 +30,6 @@ public class ListAdapter extends BaseAdapter {
 
     }
 
-    public Countries getRandomMenu() {
-// do random stuff here
-        return this.list.get(0);
-    }
-
     @Override
     public int getCount() {
         return this.list.size();
@@ -69,14 +64,18 @@ public class ListAdapter extends BaseAdapter {
         protected TextView tv_pos, tv_sembuh, tv_meninggal, tv_content;
 
         public ViewHolder(View view) {
-            tv_content = view.findViewById(R.id.tv_content);
+            Log.d("tes", "ViewHolder: Test");
+            this.tv_content = view.findViewById(R.id.tv_content);
             this.tv_pos = view.findViewById(R.id.tv_Pos);
+            this.tv_pos.setText("tessssssss");
+            this.tv_pos.setText("tessssssss");
+            this.tv_pos.setText("tessssssss");
             this.tv_sembuh = view.findViewById(R.id.tv_sembuh);
             this.tv_meninggal = view.findViewById(R.id.tv_meninggal);
             final LinearLayout one = (LinearLayout) view.findViewById(R.id.accordion_parent);
             one.setVisibility(View.GONE);
-            tv_content.setOnClickListener(new View.OnClickListener() {
-                boolean isOpen = false;
+            this.tv_content.setOnClickListener(new View.OnClickListener() {
+                boolean isOpen = true;
 
                 @Override
                 public void onClick(View v) {

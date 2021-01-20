@@ -47,12 +47,12 @@ public class CountryFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_country, container, false);
 
-//       this.listMenu = view.findViewById(R.id.lv_item);
-//            this.adapter = new ListAdapter(getActivity());
-//            this.listMenu.setAdapter(this.adapter);
-//            this.adapter.addLine("Indonesia", "100","100","0");
-//            this.adapter.addLine("Indonesia", "100","100","0");
-//            this.adapter.addLine("Indonesia", "100","100","0");
+       this.listMenu = view.findViewById(R.id.lv_item);
+            this.adapter = new ListAdapter(getActivity());
+            this.listMenu.setAdapter(this.adapter);
+            this.adapter.addLine("Indonesia", "100","100","0");
+            this.adapter.addLine("Indonesia", "100","100","0");
+            this.adapter.addLine("Indonesia", "100","100","0");
 
         return view;
     }
