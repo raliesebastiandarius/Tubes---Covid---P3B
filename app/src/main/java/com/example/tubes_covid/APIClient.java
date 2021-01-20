@@ -21,9 +21,6 @@ public class APIClient {
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
-
-
-
         return retrofit;
     }
 

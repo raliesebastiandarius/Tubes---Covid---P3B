@@ -6,12 +6,21 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import java.util.List;
+import java.util.Random;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,7 +52,6 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
         this.pencegahanFragment = new PencegahanFragment(this);
         this.perawatanFragment = new PerawatanFragment(this);
         this.gejalaFragment = new GejalaFragment(this);
-
 //        responseText = (TextView) findViewById(R.id.responseText);
 //        apiInterface = APIClient.getClient().create(APIInterface.class);
 //        Call<MultipleResource> call = apiInterface.doGetListResources();
