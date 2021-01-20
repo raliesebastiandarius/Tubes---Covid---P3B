@@ -1,39 +1,37 @@
 package com.example.tubes_covid;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Global {
-    @SerializedName("globalId")
-    private Integer globalId;
-    @SerializedName("newConfirmed")
+    @SerializedName("ID")
+    @Expose
+    private String iD;
+    @SerializedName("NewConfirmed")
+    @Expose
     private Integer newConfirmed;
-    @SerializedName("totalConfirmed")
+    @SerializedName("TotalConfirmed")
+    @Expose
     private Integer totalConfirmed;
-    @SerializedName("newDeaths")
+    @SerializedName("NewDeaths")
+    @Expose
     private Integer newDeaths;
-    @SerializedName("totalDeaths")
+    @SerializedName("TotalDeaths")
+    @Expose
     private Integer totalDeaths;
-    @SerializedName("newRecovered")
+    @SerializedName("NewRecovered")
+    @Expose
     private Integer newRecovered;
-    @SerializedName("totalRecovered")
+    @SerializedName("TotalRecovered")
+    @Expose
     private Integer totalRecovered;
 
-    public Global(Integer globalId, Integer newConfirmed, Integer totalConfirmed, Integer newDeaths, Integer totalDeaths, Integer newRecovered, Integer totalRecovered) {
-        this.globalId = globalId;
-        this.newConfirmed = newConfirmed;
-        this.totalConfirmed = totalConfirmed;
-        this.newDeaths = newDeaths;
-        this.totalDeaths = totalDeaths;
-        this.newRecovered = newRecovered;
-        this.totalRecovered = totalRecovered;
+    public String getID() {
+        return iD;
     }
 
-    public Integer getGlobalId() {
-        return globalId;
-    }
-
-    public void setGlobalId(Integer globalId) {
-        this.globalId = globalId;
+    public void setID(String iD) {
+        this.iD = iD;
     }
 
     public Integer getNewConfirmed() {
@@ -83,4 +81,5 @@ public class Global {
     public void setTotalRecovered(Integer totalRecovered) {
         this.totalRecovered = totalRecovered;
     }
+
 }

@@ -68,13 +68,11 @@ public class ListAdapter extends BaseAdapter {
             Log.d("tes", "ViewHolder: Test");
             this.tv_content = view.findViewById(R.id.tv_content);
             this.tv_pos = view.findViewById(R.id.tv_Pos);
-            this.tv_pos.setText("tessssssss");
             this.tv_sembuh = view.findViewById(R.id.tv_sembuh);
-            this.tv_sembuh.setText("sembuh");
             this.tv_meninggal = view.findViewById(R.id.tv_meninggal);
-            this.tv_meninggal.setText("dead");
             final LinearLayout one = (LinearLayout) view.findViewById(R.id.accordion_parent);
 //            one.setVisibility(View.GONE);
+
             this.tv_content.setOnClickListener(new View.OnClickListener() {
                 boolean isOpen = true;
 
@@ -104,10 +102,8 @@ public class ListAdapter extends BaseAdapter {
     }
 
     public void addLine(String nama, String jumlahPos, String sembuh, String meninggal) {
-        Log.d("bisa cu", "addLine: asdf");
         Countries countries = new Countries(nama, jumlahPos, sembuh, meninggal);
         this.list.add(countries);
         this.notifyDataSetChanged();
-        Log.d("mampos la", "addLine: haduh");
     }
 }
