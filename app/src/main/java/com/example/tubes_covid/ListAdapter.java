@@ -74,7 +74,7 @@ public class ListAdapter extends BaseAdapter {
             one.setVisibility(View.GONE);
 
             this.tv_content.setOnClickListener(new View.OnClickListener() {
-                boolean isOpen = true;
+                boolean isOpen = false;
 
                 @Override
                 public void onClick(View v) {
