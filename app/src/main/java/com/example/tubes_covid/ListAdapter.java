@@ -71,10 +71,10 @@ public class ListAdapter extends BaseAdapter {
             this.tv_sembuh = view.findViewById(R.id.tv_sembuh);
             this.tv_meninggal = view.findViewById(R.id.tv_meninggal);
             final LinearLayout one = (LinearLayout) view.findViewById(R.id.accordion_parent);
-//            one.setVisibility(View.GONE);
+            one.setVisibility(View.GONE);
 
             this.tv_content.setOnClickListener(new View.OnClickListener() {
-                boolean isOpen = true;
+                boolean isOpen = false;
 
                 @Override
                 public void onClick(View v) {
