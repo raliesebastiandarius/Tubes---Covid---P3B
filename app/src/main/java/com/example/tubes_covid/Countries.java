@@ -6,7 +6,7 @@ public class Countries {
     private String meninggal;
     private String jumlahPos;
 
-    public Countries(String nama, String sembuh, String meninggal, String jumlahPos) {
+    public Countries(String nama, String jumlahPos, String sembuh, String meninggal) {
         this.nama = nama;
         this.sembuh = sembuh;
         this.meninggal = meninggal;

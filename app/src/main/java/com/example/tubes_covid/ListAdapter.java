@@ -18,6 +18,7 @@ public class ListAdapter extends BaseAdapter {
     public ListAdapter(Activity activity) {
         this.activity = activity;
         this.list = new ArrayList<Countries>();
+        Log.d("debug", "ListAdapter: asdfasdfasd");
     }
 
     public void setAllItems(ArrayList<Countries> data) {
@@ -28,11 +29,6 @@ public class ListAdapter extends BaseAdapter {
     public List<Countries> getAllItems() {
         return this.list;
 
-    }
-
-    public Countries getRandomMenu() {
-// do random stuff here
-        return this.list.get(0);
     }
 
     @Override
@@ -47,7 +43,7 @@ public class ListAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int i) {
-        return 0;
+        return i;
     }
 
     @Override
@@ -69,14 +65,18 @@ public class ListAdapter extends BaseAdapter {
         protected TextView tv_pos, tv_sembuh, tv_meninggal, tv_content;
 
         public ViewHolder(View view) {
-            tv_content = view.findViewById(R.id.tv_content);
+            Log.d("tes", "ViewHolder: Test");
+            this.tv_content = view.findViewById(R.id.tv_content);
             this.tv_pos = view.findViewById(R.id.tv_Pos);
+            this.tv_pos.setText("tessssssss");
             this.tv_sembuh = view.findViewById(R.id.tv_sembuh);
+            this.tv_sembuh.setText("sembuh");
             this.tv_meninggal = view.findViewById(R.id.tv_meninggal);
+            this.tv_meninggal.setText("dead");
             final LinearLayout one = (LinearLayout) view.findViewById(R.id.accordion_parent);
-            one.setVisibility(View.GONE);
-            tv_content.setOnClickListener(new View.OnClickListener() {
-                boolean isOpen = false;
+//            one.setVisibility(View.GONE);
+            this.tv_content.setOnClickListener(new View.OnClickListener() {
+                boolean isOpen = true;
 
                 @Override
                 public void onClick(View v) {
@@ -94,6 +94,7 @@ public class ListAdapter extends BaseAdapter {
 
 
         public void updateView(Countries countries, final int i) {
+            Log.d("masuk ah", "updateView: asdf");
             this.tv_content.setText(countries.getNama());
             this.tv_pos.setText(countries.getJumlahPos());
             this.tv_sembuh.setText(countries.getSembuh());
@@ -103,8 +104,10 @@ public class ListAdapter extends BaseAdapter {
     }
 
     public void addLine(String nama, String jumlahPos, String sembuh, String meninggal) {
+        Log.d("bisa cu", "addLine: asdf");
         Countries countries = new Countries(nama, jumlahPos, sembuh, meninggal);
         this.list.add(countries);
         this.notifyDataSetChanged();
+        Log.d("mampos la", "addLine: haduh");
     }
 }
