@@ -13,6 +13,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
     APIInterface apiInterface;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements FragmentListener 
         this.pencegahanFragment = new PencegahanFragment(this);
         this.perawatanFragment = new PerawatanFragment(this);
         this.gejalaFragment = new GejalaFragment(this);
+
 //        responseText = (TextView) findViewById(R.id.responseText);
 //        apiInterface = APIClient.getClient().create(APIInterface.class);
 //        Call<MultipleResource> call = apiInterface.doGetListResources();
