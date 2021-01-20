@@ -18,6 +18,7 @@ public class ListAdapter extends BaseAdapter {
     public ListAdapter(Activity activity) {
         this.activity = activity;
         this.list = new ArrayList<Countries>();
+        Log.d("debug", "ListAdapter: asdfasdfasd");
     }
 
     public void setAllItems(ArrayList<Countries> data) {
@@ -42,7 +43,7 @@ public class ListAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int i) {
-        return 0;
+        return i;
     }
 
     @Override
@@ -67,13 +68,11 @@ public class ListAdapter extends BaseAdapter {
             Log.d("tes", "ViewHolder: Test");
             this.tv_content = view.findViewById(R.id.tv_content);
             this.tv_pos = view.findViewById(R.id.tv_Pos);
-            this.tv_pos.setText("tessssssss");
-            this.tv_pos.setText("tessssssss");
-            this.tv_pos.setText("tessssssss");
             this.tv_sembuh = view.findViewById(R.id.tv_sembuh);
             this.tv_meninggal = view.findViewById(R.id.tv_meninggal);
             final LinearLayout one = (LinearLayout) view.findViewById(R.id.accordion_parent);
-            one.setVisibility(View.GONE);
+//            one.setVisibility(View.GONE);
+
             this.tv_content.setOnClickListener(new View.OnClickListener() {
                 boolean isOpen = true;
 
@@ -93,6 +92,7 @@ public class ListAdapter extends BaseAdapter {
 
 
         public void updateView(Countries countries, final int i) {
+            Log.d("masuk ah", "updateView: asdf");
             this.tv_content.setText(countries.getNama());
             this.tv_pos.setText(countries.getJumlahPos());
             this.tv_sembuh.setText(countries.getSembuh());

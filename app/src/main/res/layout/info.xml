@@ -18,28 +18,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_Pos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Positif"
             android:gravity="center"/>
 
+        <TextView
+            android:id="@+id/tv_Pos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""/>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sembuh"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/tv_sembuh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sembuh"
+            android:text=""
             android:gravity="center"/>
 
 
@@ -48,13 +62,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meninggal"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/tv_meninggal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Meninggal"
+            android:text=""
             android:gravity="center"/>
 
 
